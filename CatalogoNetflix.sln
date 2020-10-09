@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoNetflix.Executor", "app\CatalogoNetflix.Executor\CatalogoNetflix.Executor.csproj", "{73D8E134-CE87-4FD2-9438-255D96AF9394}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogoNetflix.WebAPI", "app\CatalogoNetflix.WebAPI\CatalogoNetflix.WebAPI.csproj", "{A8C4B1BA-8730-4A41-9BD5-A696D8721C33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoNetflix.WebAPI", "app\CatalogoNetflix.WebAPI\CatalogoNetflix.WebAPI.csproj", "{A8C4B1BA-8730-4A41-9BD5-A696D8721C33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6E4B3E1C-8394-409A-BF0D-F5F917A6EC0A}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
