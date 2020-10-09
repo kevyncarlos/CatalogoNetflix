@@ -12,8 +12,8 @@
 ### Rotas
 >Base: http://localhost:5000
 
-ROTA | DADOS | OBSERVAÇÃO
---- | :---: | ---
-`/api/catalogo` | - | Lista todos os filmes do catálogo
-`/api/catalogo/{id}` | \{id\} = inteiro | Lista um filme pelo identificador (ID)
-`/api/catalogo/search/{title}` | \{title\} = string | Lista todos os filmes que contenham uma palavra no título
+ROTA | DADOS | OBSERVAÇÃO | EXEMPLO
+--- | :---: | --- | ---
+`/api/catalogo` | - | Lista todos os filmes do catálogo | -
+`/api/catalogo/{id}` | \{id\} = inteiro | Lista um filme pelo identificador (ID) | `/api/catalogo/1`
+`/api/catalogo/search/{title}` | \{title\} = string | Lista todos os filmes que contenham uma palavra no título | `/api/catalogo/search/great`
