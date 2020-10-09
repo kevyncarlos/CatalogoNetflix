@@ -26,17 +26,17 @@ namespace CatalogoNetflix.WebAPI.Controllers
         public IEnumerable<Filme> Get() => _filmeRepository.GetAll();
 
         [HttpGet]
-        [Route("/{id}")]
-        public Filme Get(int id) => _filmeRepository.GetById(id);
+        [Route("{id}")]
+        public Filme GetById(int id) => _filmeRepository.GetById(id);
 
         [HttpGet]
-        [Route("/{title}")]
-        public IEnumerable<Filme> Get(string title) => _filmeRepository.Search(x => x.Title.Contains(title));
+        [Route("search/{title}")]
+        public IEnumerable<Filme> GetByTitle(string title) => _filmeRepository.Search(x => x.Title.ToLower().Contains(title.ToLower()));
 
         [HttpPost]
         public async Task<IEnumerable<Filme>> Post(List<Filme> filmes)
         {
-            List<Filme> filmesParaSalvar = null;
+            List<Filme> filmesParaSalvar = new List<Filme>();
 
             foreach (var filme in filmes)
             {
