@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CatalogoNetflix.WebAPI.Data.Entities;
+﻿using CatalogoNetflix.WebAPI.Data.Entities;
 using CatalogoNetflix.WebAPI.Data.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace CatalogoNetflix.WebAPI.Controllers
 {
